@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { getAddresses, saveAddress } from "@/lib/addresses";
+import toast, { Toaster } from "react-hot-toast";
 
 interface OrderSummaryProps {
   getCartCount: () => number;
